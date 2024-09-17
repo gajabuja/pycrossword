@@ -153,7 +153,7 @@ def __generate_crossword(
     Returns:
         tuple: Final crossword grid, dimensions list and placement list.
     """
-    random.shuffle(words)
+    # random.shuffle(words)
     word_ = words.pop(0)
     placed_words = [[word_, 0, 0, True]]
     crossword_, dimensions = __place_first(word_)
